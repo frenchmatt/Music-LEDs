@@ -41,7 +41,7 @@ void loop() {
       r += d;
       g -= d;
       b -= d;
-      }
+    }
     else if (sensorValue <= m2) {
       r -= d;
       g += 2*d;
@@ -68,7 +68,7 @@ void loop() {
       r += d;
       g -= d;
       b -= d;
-      }
+    }
     else if (sensorValue <= m2) {
       r -= d;
       g += d;
@@ -95,7 +95,7 @@ void loop() {
       r += 2*d;
       g -= 2*d;
       b -= 3*d;
-      }
+    }
     else if (sensorValue <= m2) {
       r += d;
       g -= d;
@@ -122,7 +122,7 @@ void loop() {
       r += 3*d;
       g -= d;
       b -= 3*d;
-      }
+    }
     else if (sensorValue <= m2) {
       r += d;
       g += d;
@@ -149,7 +149,7 @@ void loop() {
       r += d;
       g += d;
       b -= 3*d;
-      }
+    }
     else if (sensorValue <= m2) {
       r -= d;
       g += d;
