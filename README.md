@@ -47,7 +47,7 @@ voltage approaches 1 V, the output voltage should stay below the maximum 5 V tha
 read in by the arduino's analog pins. The figure below shows the output voltage as a function
 of time, and thus a function of frequency.
 
-![alt text](plot.png)
+![plot](https://user-images.githubusercontent.com/35068805/48927124-a75f8300-eea1-11e8-90f4-4cae7973c5f9.PNG)
 Figure 2: Simulation results of output voltage as a function of the input signal's frequency.
 
 The figure shows the voltage level as the frequency changes. To reiterate, the voltage source
@@ -90,7 +90,7 @@ The other circuitry I used in this project was an array of TO-220 MOSFETs to con
 RGB switching of the LED strip. That circuit is shown below and can be found on Adafruit's
 website.[4]
 
-![alt text](LEDcircuit.png)
+![ledcircuit](https://user-images.githubusercontent.com/35068805/48927126-a9294680-eea1-11e8-8fb3-c8582ad61d0b.PNG)
 Figure 3: Schematic of the wiring to control the LED strip. Note, some changes were made to
 this schematic such as power distribution.
 
@@ -113,7 +113,7 @@ I found a suprising difficulty when working on the argorithm to control the LED 
 difficulty arose due to the nature of the RGB color scale. The figure below shows the breakdown
 of R, G, and B values which make up every color on the RGB scale.
 
-![alt text](RGBscale.png)
+![rgbscale](https://user-images.githubusercontent.com/35068805/48927123-a3cbfc00-eea1-11e8-8d4f-9866e45481da.PNG)
 Figure 4: The top graphic shows the scale as a whole. The bottom graphic shows how each
 color in the scale above would be represented in RGB.
 
