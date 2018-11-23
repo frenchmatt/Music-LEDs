@@ -25,7 +25,7 @@ The elements for the ciruit were based upon LTSpice simmulation and available pa
 part numbers, resistances, and values for capacitors are labeled beside each component. Note,
 the capacitors are electrolytic. All of the components can be found online.
 
-![alt text](https://raw.githubusercontent.com/frenchmatt/Music-LEDs/master/schematic.png)
+![alt text](schematic.png)
 Figure 1: Schematic for pitch/frequency to voltage circuit.
 
 The arbitrary behavior voltage source on the left hand side of the schematic represents the raw
@@ -47,7 +47,7 @@ voltage approaches 1 V, the output voltage should stay below the maximum 5 V tha
 read in by the arduino's analog pins. The figure below shows the output voltage as a function
 of time, and thus a function of frequency.
 
-|||||||||||||||||||||
+![alt text](plot.png)
 Figure 2: Simulation results of output voltage as a function of the input signal's frequency.
 
 The figure shows the voltage level as the frequency changes. To reiterate, the voltage source
@@ -90,7 +90,7 @@ The other circuitry I used in this project was an array of TO-220 MOSFETs to con
 RGB switching of the LED strip. That circuit is shown below and can be found on Adafruit's
 website.[4]
 
-|||||||||||||||||||||||
+![alt text](LEDcircuit.png)
 Figure 3: Schematic of the wiring to control the LED strip. Note, some changes were made to
 this schematic such as power distribution.
 
@@ -113,7 +113,7 @@ I found a suprising difficulty when working on the argorithm to control the LED 
 difficulty arose due to the nature of the RGB color scale. The figure below shows the breakdown
 of R, G, and B values which make up every color on the RGB scale.
 
-||||||||||||||||||||||||
+![alt text](RGBscale.png)
 Figure 4: The top graphic shows the scale as a whole. The bottom graphic shows how each
 color in the scale above would be represented in RGB.
 
