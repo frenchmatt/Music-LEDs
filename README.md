@@ -25,7 +25,7 @@ The elements for the ciruit were based upon LTSpice simmulation and available pa
 part numbers, resistances, and values for capacitors are labeled beside each component. Note,
 the capacitors are electrolytic. All of the components can be found online.
 
-![alt text](schematic.png)
+![schematic](https://user-images.githubusercontent.com/35068805/48927098-6f584000-eea1-11e8-809f-f7844655debc.PNG)
 Figure 1: Schematic for pitch/frequency to voltage circuit.
 
 The arbitrary behavior voltage source on the left hand side of the schematic represents the raw
