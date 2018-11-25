@@ -8,7 +8,7 @@ void setup() {
   pinMode(GREENPIN, OUTPUT);
   pinMode(BLUEPIN, OUTPUT);
   pinMode(SOUNDPIN, INPUT);
-  Serial.begin (9600);  
+  //Serial.begin (9600);                                    //serial console for dev use
 }
 
 int maxVal = 0;                                             //used to determine each song's unique max
@@ -24,7 +24,7 @@ double power = 1.5;
 
 void loop() {
   double sensorValue = pow(analogRead (SOUNDPIN), power);   //reads in signal and spreads values according to power
-  Serial.println (sensorValue, DEC);                        //prints input to consol for dev use
+  //Serial.println (sensorValue, DEC);                      //prints input to consol for dev use
   
   maxVal -= 1;                                              //decrements local max to keep range updated
   
