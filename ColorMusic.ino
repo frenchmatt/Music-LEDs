@@ -1,7 +1,7 @@
 #define REDPIN 5                                            //r
 #define GREENPIN 6                                          //g
 #define BLUEPIN 3                                           //b
-#define SOUNDPIN A0                                         //pin for reading voltage level in
+#define SOUNDPIN A0                                         //pin for reading voltage level in from F2V circuit
 
 void setup() {
   pinMode(REDPIN, OUTPUT);
