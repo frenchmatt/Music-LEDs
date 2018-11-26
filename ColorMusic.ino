@@ -30,7 +30,7 @@ void loop() {
   
   if(sensorValue > maxVal) {                                //resets max and interval values
     maxVal = sensorValue;
-    m1 = 0.25 * maxVal;
+    m1 = 0.1 * maxVal;
     m2 = 0.45 * maxVal;
     m3 = 0.55 * maxVal;
     m4 = 0.7 * maxVal; 
