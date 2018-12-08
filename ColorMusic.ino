@@ -14,7 +14,7 @@ void setup() {
 int maxVal = 0;                                             //used to determine each song's unique max
 
 double m1 = 0, m2 = 0, m3 = 0, m4 = 0;                      //used to split input range into 5 levels
-int d = 7;                                                  //(delta) value to make colors more reactive
+int d = 2;                                                  //(delta) value to make colors more reactive
 int previous = 0;                                           //level previously read in
 
 int r, g, b;                                                //red, green, and blue values to be output
