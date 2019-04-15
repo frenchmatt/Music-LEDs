@@ -1,6 +1,6 @@
-#define REDPIN 5                                            //r
-#define GREENPIN 6                                          //g
-#define BLUEPIN 3                                           //b
+#define REDPIN 5                                            //r control output pin
+#define GREENPIN 6                                          //g control output pin
+#define BLUEPIN 3                                           //b control output pin
 #define SOUNDPIN A0                                         //pin for reading voltage level in from F2V circuit
 
 void setup() {
@@ -8,32 +8,31 @@ void setup() {
   pinMode(GREENPIN, OUTPUT);
   pinMode(BLUEPIN, OUTPUT);
   pinMode(SOUNDPIN, INPUT);
-  //Serial.begin (9600);                                    //serial console for dev use
+  Serial.begin (9600);                                      //serial console for dev use
 }
 
-int maxVal = 0;                                             //used to determine each song's unique max
+double maxVal = 0;                                          //used to determine each song's unique max
 
 double m1 = 0, m2 = 0, m3 = 0, m4 = 0;                      //used to split input range into 5 levels
-int d = 2;                                                  //(delta) value to make colors more reactive
+int d = 4;                                                  //(delta) value to make colors more reactive
 int previous = 0;                                           //level previously read in
 
 int r, g, b;                                                //red, green, and blue values to be output
 int wait = 1;                                               //delay between each loop
 
-double power = 1.5;                                         
+double power = 1.5;                                         //affects linearity of sensor input values
 
 void loop() {
   double sensorValue = pow(analogRead (SOUNDPIN), power);   //reads in signal and spreads values according to power
-  //Serial.println (sensorValue, DEC);                      //prints input to consol for dev use
-  
+  Serial.println(analogRead(SOUNDPIN), DEC);                //prints input to consol for dev use
   maxVal -= 1;                                              //decrements local max to keep range updated
   
   if(sensorValue > maxVal) {                                //resets max and interval values
-    maxVal = sensorValue;
-    m1 = 0.1 * maxVal;
-    m2 = 0.45 * maxVal;
-    m3 = 0.55 * maxVal;
-    m4 = 0.7 * maxVal; 
+    maxVal = sensorValue;                                   
+    m1 = 0.1 * maxVal;                                      
+    m2 = 0.25 * maxVal;                                     
+    m3 = 0.5 * maxVal;
+    m4 = 0.75 * maxVal; 
   }
                                                             
   if(previous <= m1) {                                      //compares previous range to current range
